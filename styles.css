@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family:'digital-7' ;
+    src: url(./digital-7/digital-7.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    gap: 30px;
+    background-image: url('./1497292-final.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+h2{
+ color: white;
+ font-size: 50px;
+ font-weight: 600;
+}
+.frame{
+    width: 750px;
+    height: 200px;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.clock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.InnerClockBox{
+    
+    height: 100%;
+    width: 150px;
+    font-family:'digital-7' ;
+    font-size: 140px;
+    color: white;
+   
+}
+.colan{
+ height: 100%;
+ width: 30px;
+ font-family:'digital-7' ;
+    font-size: 140px;
+    color: white;
+ 
+}
+
+
+@media(max-width: 600px){
+    body{
+        gap: 80px;
+    }
+    h2{
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+    }
+    .frame{
+        width: 380px;
+        height: 80px;
+    }
+    .InnerClockBox{
+        width: 70px;
+        font-size: 60px;
+        color: white;
+    }
+    .colan{
+        width: 15px;
+        font-size: 60px;
+        color: white;
+    }
+    
+}
